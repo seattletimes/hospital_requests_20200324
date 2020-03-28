@@ -6,9 +6,9 @@ require(tidyverse) #dplyr, tidyr, readr, ggplot2
 setwd("/Users/Man/Documents/Data/Repos/ST/corona/hospital_requests_20200324")
 
 # Pull in original data
-df_pages1_orig <- read.csv('output_data/tabula-reports_first_pages_cropped.csv',
+df_pages1_orig <- read.csv('output_data/tabula_output/tabula-reports_first_pages_cropped.csv',
                            header = FALSE, na.strings = '', stringsAsFactors = FALSE)
-df_pages2_orig <- read.csv('output_data/tabula-reports_non_first_pages_cropped.csv',
+df_pages2_orig <- read.csv('output_data/tabula_output/tabula-reports_non_first_pages_cropped.csv',
                            header = FALSE, na.strings = '', stringsAsFactors = FALSE)
 
 # Create independent copies of the dataframes
@@ -27,7 +27,7 @@ df$update_dt <- as.Date(df$update_date, format='%m/%d/%Y')
 sort(table(df$original_dt, exclude = FALSE), decreasing = TRUE)[1:20]
 sort(table(df$update_dt, exclude = FALSE), decreasing = TRUE)[1:20]
 
-write.csv(df, 'output_data/df.csv', row.names = FALSE)
+write.csv(df, 'output_data/hospita_orders_preliminary_data.csv', row.names = FALSE)
 
 
 sum(is.na(df$original_date)) # 35
