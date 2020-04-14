@@ -1,4 +1,4 @@
-![The Seattle Times](https://github.com/seattletimes/hospital_requests_20200324/tree/master/assets/ST_Logo.png)
+![The Seattle Times](https://github.com/seattletimes/hospital_requests_20200324/blob/master/assets/ST_Logo.png)
 
 
 # hospital_requests_20200324
@@ -10,7 +10,7 @@ This repository shows the methodoloy used to obtain the data published in the st
 
 The results are summarized in this lovely vizualization by [Emily Eng](https://github.com/emilymeng):
 
-![Undersupplied Vizualization](https://github.com/seattletimes/hospital_requests_20200324/tree/master/assets/Undersupplied_Viz_by_Emily_Eng.png)
+![Undersupplied Vizualization](https://github.com/seattletimes/hospital_requests_20200324/blob/master/assets/Undersupplied_Viz_by_Emily_Eng.png)
 
 Staff reporter Dan Gilbert issued a request to the Washington State Military Department for records of all equipment orders made by state hospitals since the beginnig of 2020. We obtained the 70 PDF files saved down in the folder *source_data/pdf*, in this repository. The objective was to convert these files into structured data.
 
