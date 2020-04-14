@@ -26,9 +26,8 @@ Both scripts are populated with comments that we hope will make them easy to fol
 Questions or comments are always welcome.
 
 Cheers,
-Manuel Villa
 
-[mvilla@seattletimes.com](mailto:mvilla@seattletimes.com)
+[Manuel Villa](mailto:mvilla@seattletimes.com)
 
 
 
