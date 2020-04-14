@@ -27,6 +27,7 @@ Questions or comments are always welcome.
 
 Cheers,
 Manuel Villa
+
 [mvilla@seattletimes.com](mailto:mvilla@seattletimes.com)
 
 
