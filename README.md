@@ -5,15 +5,15 @@
 
 By [Manuel Villa](https://twitter.com/mvilla1859).
 
-This repository shows the methodoloy used to obtain the data for The Seattle Times story published on 5 April 2020, [How the coronavirus overwhelmed Washington state’s early efforts to contain it ](https://www.seattletimes.com/seattle-news/times-watchdog/lost-battle-how-coronavirus-overwhelmed-washington-states-efforts-to-contain-it/).
+This repository shows the methodology used to obtain data for The Seattle Times story published on 5 April 2020, [How the coronavirus overwhelmed Washington state’s early efforts to contain it ](https://www.seattletimes.com/seattle-news/times-watchdog/lost-battle-how-coronavirus-overwhelmed-washington-states-efforts-to-contain-it/).
 
 The results are summarized in the splendid vizualization by [Emily Eng](https://github.com/emilymeng) you can see at the bottom.
 
-Staff reporter [Dan Gilbert](https://www.seattletimes.com/author/daniel-gilbert/) issued a request to the Washington State Military Department for records of all equipment orders made by state hospitals since the beginnig of 2020. We obtained the 70 PDF files saved down in the folder *source_data/pdf*. The objective was to convert these files into structured data.
+Staff reporter [Dan Gilbert](https://www.seattletimes.com/author/daniel-gilbert/) obtained the Washington state Military Department's database of requests from healthcare organizations and government agencies for resources to respond to the coronavirus outbreak. We obtained the 70 PDF files saved down in the folder *source_data/pdf*. The objective was to convert these files into structured data.
 
-Not having time nor the will to reinvent the wheel, we followed the least-resistance approach: to use [Tabula](https://tabula.technology/). This marvelous tool efficiently converts PDFs that contain tables into CSV, JSON, or structured data formats. The tradeoff for such conveninece, however, is that those PDF tables need to in pristine shape for Tabula to efficiently recognize and convert them. That was not the case with the records we obtained. So to use it, we would first need to overhaul the PDFs to Tabula's taste. This is how we did it:
+Not having time nor the will to reinvent the wheel, we followed the least-resistance approach: to use [Tabula](https://tabula.technology/). This marvelous tool efficiently converts PDFs that contain tables into CSV, JSON, or structured data formats. The tradeoff for such convenience, however, is that those PDF tables need to be in pristine shape for Tabula to efficiently recognize and convert them. That was not the case with the records we obtained. So to use it, we would first need to overhaul the PDFs to Tabula's taste. This is how we did it:
 
-There are two scripts in the reopsitory:
+There are two scripts in the repository:
 
 #### script_01_crop_fest_python.ipynb
 The PDFs had a lot of information that we did not need. Not only that, but that information's layout in the PDF kept throwing Tabula off. This script cropped away areas from all pages that constituted nothing but noise. Then we produced new PDFs that did not include those unnecessary areas and fed them to Tabula.
