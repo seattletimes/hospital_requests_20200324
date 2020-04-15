@@ -11,17 +11,17 @@ The results are summarized in the splendid vizualization by [Emily Eng](https://
 
 Staff reporter [Dan Gilbert](https://www.seattletimes.com/author/daniel-gilbert/) obtained the Washington state Military Department's database of requests from healthcare organizations and government agencies for resources to respond to the coronavirus outbreak. We obtained the 70 PDF files saved down in the folder *source_data/pdf*. The objective was to convert these files into structured data.
 
-Not having time nor the will to reinvent the wheel, we followed the least-resistance approach: to use [Tabula](https://tabula.technology/). This marvelous tool efficiently transforms tables containd inside PDFs into structured data formats, such as CSV or JSON. The tradeoff for such convenience, however, is that those PDF tables need to be in pristine shape for Tabula to efficiently recognize and convert them. That was not the case with the records we obtained. So to use it, we would first need to overhaul the PDFs to Tabula's taste. This is how we did it:
+Not having time nor the will to reinvent the wheel, we followed the least-resistance approach: to use [Tabula](https://tabula.technology/). This marvelous tool efficiently transforms tables containd inside PDFs into structured data formats, such as CSV or JSON. The tradeoff for such convenience, however, is that those PDF tables need to be in pristine shape for Tabula to efficiently recognize and convert them. That was not the case with the records we obtained. So to use it, we would first need to overhaul the PDFs to Tabula's taste.
 
 There are two scripts in the repository:
 
-#### script_01_crop_fest_python.ipynb
+### script_01_crop_fest_python.ipynb
 The PDFs had a lot of information that we did not need. Not only that, but that information's layout in the PDF kept throwing Tabula off. This script cropped away areas from all pages that constituted nothing but noise. Then we produced new PDFs that did not include those unnecessary areas and fed them to Tabula.
 
-#### script_02_data_cleaning_and_analysis.ipynb
+### script_02_data_cleaning_and_analysis.ipynb
 After feeding the cropped PDFs to Tabula, it very kindly produced CSV files that contained the data it scraped off from them. This was still very raw data that needed a lot of polishing and standardizing. This script did that.
 
-Both scripts are populated with comments that we hope will make them easy to follow and to understand the rather simple structure of the repository's structure.
+Both scripts are populated with comments that we hope will make them easy to follow and to understand the rather simple structure of the repository.
 
 [Questions or comments](mailto:mvilla@seattletimes.com) are always welcome.
 
