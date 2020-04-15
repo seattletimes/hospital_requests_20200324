@@ -11,7 +11,7 @@ The results are summarized in the splendid vizualization by [Emily Eng](https://
 
 Staff reporter [Dan Gilbert](https://www.seattletimes.com/author/daniel-gilbert/) obtained the Washington state Military Department's database of requests from healthcare organizations and government agencies for resources to respond to the coronavirus outbreak. We obtained the 70 PDF files saved down in the folder *source_data/pdf*. The objective was to convert these files into structured data.
 
-Not having time nor the will to reinvent the wheel, we followed the least-resistance approach: to use [Tabula](https://tabula.technology/). This marvelous tool efficiently converts PDFs that contain tables into CSV, JSON, or structured data formats. The tradeoff for such convenience, however, is that those PDF tables need to be in pristine shape for Tabula to efficiently recognize and convert them. That was not the case with the records we obtained. So to use it, we would first need to overhaul the PDFs to Tabula's taste. This is how we did it:
+Not having time nor the will to reinvent the wheel, we followed the least-resistance approach: to use [Tabula](https://tabula.technology/). This marvelous tool efficiently transforms tables containd inside PDFs into structured data formats, such as CSV or JSON. The tradeoff for such convenience, however, is that those PDF tables need to be in pristine shape for Tabula to efficiently recognize and convert them. That was not the case with the records we obtained. So to use it, we would first need to overhaul the PDFs to Tabula's taste. This is how we did it:
 
 There are two scripts in the repository:
 
